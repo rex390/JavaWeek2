@@ -1,0 +1,19 @@
+package DigitToWordsExample;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		Conversion convert = new Conversion();
+		StringConversion convertString = new StringConversion();
+		IfConversion convertIf = new IfConversion();
+		//convert.DigitToWords(sc.nextLine()); //my method
+		//convertIf.digitToWord(sc.nextInt());
+		convertString.digitToWord(sc.nextInt());
+
+	}
+
+}

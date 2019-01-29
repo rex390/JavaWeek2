@@ -1,0 +1,6 @@
+package AbstractClass;
+
+public class ClassTwo extends ClassOne
+{
+	
+}

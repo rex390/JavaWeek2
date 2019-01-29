@@ -1,0 +1,9 @@
+package AbstractClass;
+
+public class ClassTwo extends ClassOne implements InterfaceTester
+{
+	public void go()
+	{
+		System.out.println("abc");
+	}
+}

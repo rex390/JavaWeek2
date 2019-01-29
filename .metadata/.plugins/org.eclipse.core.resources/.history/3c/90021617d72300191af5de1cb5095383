@@ -1,0 +1,17 @@
+package Singletons;
+
+public class Singletons 
+{
+	static Singletons singleObject;
+	private Singletons() {};
+	private int x,y;
+	
+	public static Singletons createSingletons()
+	{
+		if(singleObject==null)
+		{
+			singleObject = new Singletons();
+		}
+		return singleObject;
+	}
+}

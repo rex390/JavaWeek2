@@ -1,0 +1,9 @@
+package AbstractClass;
+
+public class ClassTwo extends ClassOne
+{
+	public void go()
+	{
+		System.out.println("abc");
+	}
+}

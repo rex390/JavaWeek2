@@ -1,0 +1,14 @@
+package Swing;
+
+public class Mains {
+
+	public static void main(String[] args) 
+	{
+		SwingTest swingTest = new SwingTest();
+		swingTest.runTest(600,600);
+		swingTest.createButton("click here", swingTest.getFrame().getWidth()/2-50, swingTest.getFrame().getHeight()/2, 100, 100);
+		//swingTest.createButton("click here", 0, 300, 300, 300);
+		
+	}
+
+}

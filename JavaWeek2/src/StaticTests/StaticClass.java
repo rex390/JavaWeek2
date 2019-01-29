@@ -3,11 +3,23 @@ package StaticTests;
 public class StaticClass 
 {
 	static int counter=0;
+	static int amount=0;
 	int nonStaticCounter=0;
 	StaticClass()
 	{
 		counter++;
 	}
+	static 
+	{
+		amount=100;
+		//System.out.println(amount);
+	}
+	
+	public void show()
+	{
+		System.out.println("amount is " + amount);
+	}
+	
 	
 	public void nonStaticMethodWithStatic()
 	{

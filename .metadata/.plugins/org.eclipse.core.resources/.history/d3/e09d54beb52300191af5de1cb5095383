@@ -1,0 +1,22 @@
+package DigitToWordsExample;
+
+public class IfConversion 
+{
+	public void digitToWord(int value)
+	{
+		String answer ="";
+		if(value>=1000)
+		{
+			answer
+		}
+	}
+	
+	public String ones(int value)
+	{
+		String word ="";
+		switch(value)
+		{
+		
+		}
+	}
+}

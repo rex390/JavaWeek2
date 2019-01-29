@@ -1,0 +1,13 @@
+package ReferenceThisExample;
+
+public class ReferenceThis 
+{
+	int x =0;
+	
+	public void one()
+	{
+		int x ;
+		x = 15;
+		System.out.println("the local variable is x: " + x + " and the variable x of the current class is " + this.x);
+	}
+}

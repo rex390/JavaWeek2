@@ -1,0 +1,8 @@
+package Singletons;
+
+public class Singletons 
+{
+	static Singletons singleObject;
+	private Singletons() {};
+	
+}

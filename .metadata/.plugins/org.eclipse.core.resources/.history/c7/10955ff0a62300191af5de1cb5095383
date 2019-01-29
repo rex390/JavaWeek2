@@ -1,0 +1,6 @@
+package DigitToWordsExample;
+
+public class Main 
+{
+	Conversion convert = new Conversion();
+}

@@ -1,0 +1,17 @@
+package AbstractClass;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		ClassOne ref = new ClassTwo();
+		ClassTwo two = ref;
+
+	}
+	
+	public static void tester(ClassTwo testing)
+	{
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package DigitToWordsExample;
+
+public class StringConversion 
+{
+	String one[] = {"","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","ninteen"};
+	String tens[] = {"","ten","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninty"};
+	
+	public void digitToWord(int value)
+	{
+		String answer ="";
+		if(value>=1000)
+		{
+			answer = one[(value/1000)] + " thousand";
+			value -= ((value/1000)*1000);
+		}
+		if(value>=100)
+		{
+			answer+= " " + one[(value/100)]
+					+ " hundred";
+			value-= ((value/100)*100);
+		}
+		if(value >=20)
+		{
+			answer += " " + tens[((value/10))];
+			value = value%10;
+		}
+		if(value>=1 & value <=19)
+		{
+			answer+= " " + one[(value)];
+		}
+		System.out.println(answer);
+	}
+}
