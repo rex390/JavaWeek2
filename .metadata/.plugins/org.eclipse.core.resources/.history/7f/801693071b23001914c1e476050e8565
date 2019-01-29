@@ -1,0 +1,8 @@
+package PrivateMethod;
+
+public class ClassOne 
+{
+	private int privateVar=0;
+	protected int protectedVar=0;
+	public int publicVar=0
+}

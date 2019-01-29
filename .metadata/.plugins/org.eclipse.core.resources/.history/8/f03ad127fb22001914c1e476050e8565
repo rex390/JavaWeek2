@@ -1,0 +1,5 @@
+package StaticTests;
+
+public class StaticClass {
+
+}

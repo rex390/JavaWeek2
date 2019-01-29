@@ -1,0 +1,10 @@
+package PrivateMethod;
+
+public class Main 
+{
+	
+	int main
+	
+	ClassTwo classTwo = new ClassTwo();
+	
+}

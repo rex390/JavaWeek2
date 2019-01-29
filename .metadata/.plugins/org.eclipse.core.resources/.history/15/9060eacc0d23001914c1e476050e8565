@@ -1,0 +1,18 @@
+package ResultsWeek2Day1;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		Results Peter = new Results();
+		InputClass inputClass = new InputClass();
+		Peter.setPhy(inputClass.stringToInteger(0, 150, -1, "enter physics mark"));
+		Peter.setChe(inputClass.stringToInteger(0, 150, -1, "enter chemistry mark"));
+		Peter.setMath(inputClass.stringToInteger(0, 150, -1, "enter math mark"));
+		Peter.markWork();
+		inputClass.closeScanner();
+	}
+	
+	
+}

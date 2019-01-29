@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		Results Peter = new Results();
+		InputClass inputClass = new InputClass();
+		Peter.setPhy(inputClass.stringToInteger(0, 150, -1, "enter physics mark"));
+		Peter.setChe(inputClass.stringToInteger(0, 150, -1, "enter chemistry mark"));
+		//Peter.setPhy();
+		//Peter.setChe();
+		Peter.showResults();
+		
+		inputClass.stringToInteger(0, 150, -1, "test value");
+		
+		
+	}
+	
+	
+}

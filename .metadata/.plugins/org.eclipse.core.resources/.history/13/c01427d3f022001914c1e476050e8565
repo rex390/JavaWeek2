@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		Results Peter = new Results();
+		Peter.setPhy(inputMade("Please enter the physics mark."));
+		Peter.setChe(inputMade("Please enter the chemistry mark."));
+		Peter.showResults();
+
+	}
+	
+	public static int inputMade(String message)
+	{
+		Scanner sc = new Scanner(System.in);
+		boolean badInput=false;
+		int mark = -1;
+		while(!badInput)
+		{
+			System.out.println(message);
+			mark = sc.nextInt();
+			badInput = inputCheck(mark) ;
+		}
+		System.out.println("Marks entered");
+		return mark;
+		
+	}
+	
+	public static boolean inputCheck(int inputToCheck)
+	{
+		if(inputToCheck>=0 & inputToCheck<=150)
+		{
+			return true;			
+		}
+		System.out.println("Invalid marks entered");
+		return false;
+	}
+
+}

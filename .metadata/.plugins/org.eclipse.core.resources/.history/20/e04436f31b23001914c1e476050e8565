@@ -1,0 +1,6 @@
+package PrivateMethod;
+
+public class ClassTwo extends ClassOne
+{
+	
+}

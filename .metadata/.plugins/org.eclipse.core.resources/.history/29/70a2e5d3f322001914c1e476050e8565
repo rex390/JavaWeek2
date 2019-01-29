@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		Results Peter = new Results();
+		InputClass inputClass = new InputClass();
+		Peter.setPhy();
+		Peter.setChe();
+		Peter.showResults();
+
+	}
+}

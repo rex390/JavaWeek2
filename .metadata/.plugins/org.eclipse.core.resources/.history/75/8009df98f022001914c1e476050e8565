@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class Results 
+{
+	private int phy,che;
+	
+	public void showResults()
+	{
+		int total,per;
+		total = phy + che;
+		per = total * 100/300;
+		System.out.println("Total marks " + total);
+		System.out.println("Percentage " + per + "%");
+	}
+
+	public int getPhy() 
+	{
+		return phy;
+	}
+
+	public void setPhy(int phyPassed) 
+	{
+		if(phyPassed >= 0 & phyPassed <= 150)
+		{
+			phy = phyPassed;
+		}	
+	}
+
+	public int getChe() 
+	{
+		return che;
+	}
+
+	public void setChe(int chePassed) 
+	{
+		if(chePassed >= 0 & chePassed <= 150)
+		{
+			phy = chePassed;
+		}
+	}
+	
+	public static int inputMade(String message)
+	{
+		Scanner sc = new Scanner(System.in);
+		boolean badInput=false;
+		int mark = -1;
+		while(!badInput)
+		{
+			System.out.println(message);
+			mark = sc.nextInt();
+			badInput = inputCheck(mark) ;
+		}
+		System.out.println("Marks entered");
+		return mark;
+		
+	}
+	
+	public static boolean inputCheck(int inputToCheck)
+	{
+		if(inputToCheck>=0 & inputToCheck<=150)
+		{
+			return true;			
+		}
+		System.out.println("Invalid marks entered");
+		return false;
+	}
+	
+	
+}

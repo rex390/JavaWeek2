@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class InputClass 
+{
+	Scanner sc;
+	InputClass()
+	{
+		sc = new Scanner(System.in);
+	}
+	
+	public int getInput()
+	{
+		String input = sc.nextLine();
+		return 0;
+		
+		
+	}
+	public boolean correctInput(String input)
+	{
+		int parsedVal;
+		try
+		{
+			input
+		}
+		return false;
+		
+	}
+}

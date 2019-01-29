@@ -1,0 +1,15 @@
+package StaticTests;
+
+public class StaticClass 
+{
+	static int counter=0;
+	StaticClass()
+	{
+		counter++;
+	}
+	
+	public void nonStaticMethodWithStatic()
+	{
+		System.out.println();
+	}
+}

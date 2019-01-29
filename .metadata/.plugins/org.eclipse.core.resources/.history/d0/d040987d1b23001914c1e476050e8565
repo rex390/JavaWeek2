@@ -1,0 +1,6 @@
+package PrivateMethod;
+
+public class Main 
+{
+	ClassTwo classTwo = new ClassTwo();
+}

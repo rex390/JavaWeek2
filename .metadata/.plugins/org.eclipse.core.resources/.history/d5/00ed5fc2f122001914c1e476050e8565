@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class InputClass 
+{
+	Scanner sc;
+	InputClass()
+	{
+		sc = new Scanner(System.in);
+	}
+	
+}

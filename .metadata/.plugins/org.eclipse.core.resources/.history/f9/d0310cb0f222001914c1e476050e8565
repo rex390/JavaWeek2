@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class InputClass 
+{
+	Scanner sc;
+	InputClass()
+	{
+		sc = new Scanner(System.in);
+	}
+	
+	public int getInput()
+	{
+		String input = sc.nextLine();
+		return 0;
+		
+		
+	}
+	public boolean stringToInteger(String input,int minVal,int maxVal)
+	{
+		int parsedVal;
+		boolean badInput = true;
+		try
+		{
+			while(badInput)
+			{
+				parsedVal = Integer.parseInt(input);
+				badInput = checkValue(parsedVal,minVal,maxVal);
+			}		
+		}
+		catch(Exception e)
+		{
+			System.out.println("Invalid value");
+		}
+		return false;
+		
+	}
+	
+	public boolean checkValue(int valueToCheck,int minVal,int maxValue)
+	{
+		if(valueToCheck>=0 & valueToCheck<=maxValue)
+		{
+			return false;
+		}
+		System.out.println("Value not within range");
+		return false;
+	}
+}
