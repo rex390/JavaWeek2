@@ -1,0 +1,6 @@
+package Swing;
+
+public class Button extends JButton 
+{
+
+}

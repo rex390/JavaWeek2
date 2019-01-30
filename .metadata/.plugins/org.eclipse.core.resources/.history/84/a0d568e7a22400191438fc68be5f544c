@@ -1,0 +1,21 @@
+package Swing;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EventHandler implements ActionListener, AbstractResponse
+{
+	AbstractResponse actionObject;
+	EventHandler(AbstractResponse passed)
+	{
+		actionObject = passed;
+		
+	}
+	@OverrideAbstractResponse
+	public void actionPerformed(ActionEvent e) 
+	{
+		actionObject.run();	
+	}
+
+
+}

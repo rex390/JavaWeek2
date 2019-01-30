@@ -1,0 +1,24 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+
+import Swing.AbstractResponse;
+import Swing.EventHandler;
+
+public class TestButton extends JButton implements ActionListener
+{
+	TestButton(AbstractResponse abstractHandler, String text)
+	{
+		EventHandler e = new EventHandler(abstractHandler);
+		//Button button = new Button(text);//creating instance of JButton  
+		addActionListener(e);
+	}
+	
+	public void actionPerformed(ActionEvent e) 
+	{
+		actionObject.run();
+		
+		
+	}
+}

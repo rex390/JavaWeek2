@@ -1,0 +1,28 @@
+package Swing;
+
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EventHandler implements ActionListener, AbstractResponse
+{
+	TextField t1,t2,t3;
+	EventHandler(TextField t1,TextField t2,TextField t3)
+	{
+		actionObject = passed;
+		
+	}
+	
+	public void actionPerformed(ActionEvent e) 
+	{
+		
+	}
+	@Override
+	public void run() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

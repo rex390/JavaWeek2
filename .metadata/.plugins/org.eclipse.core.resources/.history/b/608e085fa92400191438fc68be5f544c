@@ -1,0 +1,19 @@
+package Swing;
+
+public class TestHello extends TestButton
+{
+
+	TestHello(String defaultButtonText) 
+	{
+		super(defaultButtonText);
+
+	}
+
+	@Override
+	public void runResponse() 
+	{
+		System.out.println("hello");
+		
+	}
+
+}

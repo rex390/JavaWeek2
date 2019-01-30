@@ -1,0 +1,8 @@
+package Swing;
+
+public abstract class AbstractResponse 
+{
+	
+	protected abstract void run();
+
+}

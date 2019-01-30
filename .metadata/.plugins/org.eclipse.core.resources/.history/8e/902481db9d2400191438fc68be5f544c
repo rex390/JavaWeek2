@@ -1,0 +1,16 @@
+package Swing;
+
+public class TestBye extends AbstractResponse
+{
+
+	public TestBye(TextField x)
+	{
+		
+	}
+	@Override
+	protected void run() 
+	{
+		System.out.println("Bye");
+		
+	}
+}

@@ -1,0 +1,14 @@
+package Swing;
+
+import javax.swing.JButton;
+
+public abstract class TestButton extends JButton implements AbstractResponse
+{
+	TestButton(String defaultButtonText)
+	{
+		this.setText(defaultButtonText);
+		addActionListener(e->run());
+	}
+	
+	public abstract void run();
+}

@@ -1,0 +1,26 @@
+package Swing;
+
+import java.awt.BorderLayout;
+
+public class Mains {
+
+	public static void main(String[] args) 
+	{
+		TestHello hello = new TestHello();
+		TestBye bye = new TestBye();
+		SwingTest swingTest = new SwingTest();
+		swingTest.runTest(500,500,"swingTester");
+		//swingTest.createButton("click here", 0, 0, 600, 600);
+		//swingTest.createButton("click here", swingTest.getFrame().getWidth()/2-50, swingTest.getFrame().getHeight()/2-50, 100, 100);
+		swingTest.createButtonLayout("west", BorderLayout.WEST,hello);
+		//swingTest.createButtonLayout("north", BorderLayout.NORTH);
+		//swingTest.createButtonLayout("south", BorderLayout.SOUTH);
+		//swingTest.createButtonLayout("east", BorderLayout.EAST);
+		//swingTest.createButtonLayout("center", BorderLayout.CENTER);
+		swingTest.recreateFrame(500,500);
+		//swingTest.addTextField("text field",swingTest.getFrame().getWidth()/2-50, swingTest.getFrame().getHeight()/2-50, 300, 300);
+		//swingTest.createButton("click here", 0, 300, 300, 300);
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package Swing;
+
+import javax.swing.JButton;
+
+public class Button extends JButton 
+{
+	Button(AbstractResponse abstractHandler,String text)
+	{
+		EventHandler e = new EventHandler(abstractHandler);
+		Button button = new Button(text);//creating instance of JButton  
+		button.addActionListener(e);
+		frame.add(button,layout);	
+	}
+}

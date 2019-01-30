@@ -1,0 +1,11 @@
+package TaskMultipleFrame;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		Swings = new Swings();
+
+	}
+
+}

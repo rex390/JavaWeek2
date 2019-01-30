@@ -1,0 +1,105 @@
+package TaskMultipleFrame;
+
+import java.awt.Button;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+import Swing.EventHandler;
+import Swing.TestHello;
+
+public class Swings 
+{
+	JFrame frame =null;
+	Swings()
+	{
+		frame = new JFrame("Operators");
+		//frame.setSize(width,height); //width by height
+		//frame.setLayout(null); //uses no layout managers ( not needed for now)
+		//frame.getContentPane().setBackground(Color.RED);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //like scanner.close()
+		run();
+		//frame.setVisible(true);
+	}
+	
+	private void run()
+	{
+
+		Button b1 = new Button("+");
+		Button b2 = new Button("-");
+		Button b3 = new Button("*");
+		Button b4 = new Button("/");
+		GridLayout gridLayout = new GridLayout(4,1);
+		b1.addActionListener(new ActionListener() 
+		{
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				Create("additive");
+				//t3.setText(add(Integer.parseInt(t1.getText()),Integer.parseInt(t2.getText())));
+			}
+			
+		});
+		b2.addActionListener(new ActionListener() 
+		{
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				//t3.setText(sub(Integer.parseInt(t1.getText()),Integer.parseInt(t2.getText())));
+			}
+			
+		});
+		b3.addActionListener(new ActionListener() 
+		{
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				//t3.setText(multiply(Integer.parseInt(t1.getText()),Integer.parseInt(t2.getText())));
+			}
+			
+		});
+		
+		b4.addActionListener(new ActionListener() 
+		{
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				//t3.setText(div(Integer.parseInt(t1.getText()),Integer.parseInt(t2.getText())));
+			}
+			
+		});	
+		frame.setLayout(gridLayout);
+		frame.add(b1);
+		frame.add(b2);
+		frame.add(b3);
+		frame.add(b4);		
+		frame.setSize(500,500); //width by height
+		frame.setVisible(true);
+	}
+	
+	
+	public void Create(String windowName)
+	{
+		JFrame frameFun = new JFrame(windowName);
+		
+		GridLayout gridLayout = new GridLayout(4,2);
+		frameFun.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //like scanner.close()
+		frameFun.setLayout(gridLayout);
+		frameFun.setSize(500,500); //width by height
+		frameFun.setVisible(true);		
+	}
+	
+	private void additive()
+	{
+		
+	}
+}

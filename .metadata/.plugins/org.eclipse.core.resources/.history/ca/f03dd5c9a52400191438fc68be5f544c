@@ -1,0 +1,13 @@
+package Swing;
+
+public class TestHello implements AbstractResponse
+{
+
+	@Override
+	public void run() 
+	{
+		System.out.println("hello");
+		
+	}
+
+}

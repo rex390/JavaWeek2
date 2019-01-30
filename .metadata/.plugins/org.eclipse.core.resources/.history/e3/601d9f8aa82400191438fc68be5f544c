@@ -1,0 +1,26 @@
+package Swing;
+
+import java.awt.event.KeyEvent;
+
+import javax.swing.JButton;
+
+public abstract class TestButton extends JButton implements AbstractResponse
+{
+	TestButton(String defaultButtonText)
+	{
+		this.setText(defaultButtonText);
+		addActionListener(e->runResponse());
+	}
+	
+	TestButton(String defaultButtonText, KeyEvent... args)
+	{
+		this.setText(defaultButtonText);
+		addActionListener(e->runResponse());
+		for(ActionEvent i: args)
+		{
+			
+		}
+	}
+	
+	public abstract void runResponse();
+}

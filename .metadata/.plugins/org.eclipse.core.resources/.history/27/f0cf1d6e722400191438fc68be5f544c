@@ -1,0 +1,16 @@
+package ReverseString;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		String word = "i am going to london";
+		Reverse reverse = new Reverse();
+		reverse.run();
+		reverse.findAndReplace("going", "***", "i am going to london");
+		reverse.find("going", ");
+	}
+
+	
+
+}

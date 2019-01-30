@@ -1,0 +1,21 @@
+package Swing;
+
+import java.awt.event.KeyEvent;
+
+public class TestHello extends TestButton
+{
+
+	TestHello(String defaultButtonText,KeyEvent one, KeyEvent two) 
+	{
+		super(defaultButtonText,one,two);
+
+	}
+
+	@Override
+	public void runResponse() 
+	{
+		System.out.println("hello");
+		
+	}
+
+}
