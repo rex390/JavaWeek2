@@ -59,7 +59,7 @@ public class SwingTest
 		EventHandler e = new EventHandler(t1,t2,t3);
 		FlowLayout flowLayout = new FlowLayout();
 		b1.addActionListener(e);
-		TestHello helloButton = new TestHello("hello button");
+		TestHello helloButton = new TestHello("hello button","pop");
 		frame.setLayout(flowLayout);
 		frame.add(t1);
 		frame.add(l1);
@@ -123,7 +123,7 @@ public class SwingTest
 			
 		});
 		
-		TestHello helloButton = new TestHello("hello button");
+		TestHello helloButton = new TestHello("hello button","pop");
 		frame.setLayout(flowLayout);
 		frame.add(t1);
 		frame.add(t2);

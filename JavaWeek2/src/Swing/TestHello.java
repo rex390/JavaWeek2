@@ -4,9 +4,11 @@ import java.awt.event.KeyEvent;
 
 public class TestHello extends TestButton
 {
-	TestHello(String defaultButtonText) 
+	String message="";
+	TestHello(String defaultButtonText,String message) 
 	{
 		super(defaultButtonText);
+		this.message = message;
 
 	}
 	TestHello(String defaultButtonText, KeyEvent one) 
@@ -18,16 +20,10 @@ public class TestHello extends TestButton
 	@Override
 	public void runResponse() 
 	{
-		
-		for(KeyEvent i: keys)
-		{
-			if(i!=null)
-			{
-				if(i.getKeyCode() == KeyEvent.VK_SPACE)
-				{
-					System.out.println("space is pressed");
-				}
-			}
-		}		
+
+			System.out.println(message);
+
+			
+				
 	}
 }
