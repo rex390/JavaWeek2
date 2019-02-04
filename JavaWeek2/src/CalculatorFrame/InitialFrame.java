@@ -25,6 +25,7 @@ public class InitialFrame extends JFrame
 		Button b3 = new Button("*");
 		Button b4 = new Button("/");
 		GridLayout gridLayout = new GridLayout(4,1);
+		b1.addActionListener(e -> createNewFrameWithTitle("addition"));
 		b1.addActionListener(new ActionListener() 
 		{
 
@@ -80,6 +81,9 @@ public class InitialFrame extends JFrame
 		setVisible(true);
 	}
 	
+	public static void createNewFrameWithTitle(String title) {
+		NewFrame newFrame = new NewFrame(title);
+	}
 	
 	
 	
